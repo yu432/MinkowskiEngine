@@ -314,7 +314,7 @@
 /* Platform-dependent helpers for defining global variables in header files.
  * Ensures the linker uses only one instance when multiple source files include
  * the headers, avoiding duplicate-definition linker errors. */
-#include "nvtxDetail/nvtxLinkOnce.h"
+#include "nvtxLinkOnce.h"
 
 /* Macros for applying major-version-specific suffix to NVTX global symbols, so
  * usage of different versions in different source files is supported without
