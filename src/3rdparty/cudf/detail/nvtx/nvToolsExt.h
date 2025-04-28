@@ -1613,10 +1613,10 @@ NVTX_DECLSPEC void NVTX_API nvtxDomainDestroy(nvtxDomainHandle_t domain);
 
 #define NVTX_IMPL_GUARD /* Ensure other headers cannot be included directly */
 
-#include "nvtxDetail/nvtxTypes.h"
+#include "nvtxTypes.h"
 
 #ifndef NVTX_NO_IMPL
-#include "nvtxDetail/nvtxImpl.h"
+#include "nvtxImpl.h"
 #endif /*NVTX_NO_IMPL*/
 
 #undef NVTX_IMPL_GUARD
