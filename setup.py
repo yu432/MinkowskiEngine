@@ -172,8 +172,8 @@ if sys.platform == "win32":
         CC_FLAGS += ["/sdl"]
     else:
         CC_FLAGS += ["/sdl", "/permissive-"]
-else:
-    CC_FLAGS += ["-fPIC"]
+#else:
+#    CC_FLAGS += ["-fPIC"]
 
 if "darwin" in platform:
     CC_FLAGS += ["-stdlib=libc++", "-std=c++17"]
